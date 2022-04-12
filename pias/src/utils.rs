@@ -47,8 +47,3 @@ pub fn get_random_scalar() -> Scalar {
     let rng = thread_rng();
     Scalar::random(rng)
 }
-
-// pub fn hash_to_g1_point(message: &[u8]) -> G1Affine {
-//     let num = hash_to_scalar(message);
-//     let point = *G1_BASEPOINT * num;
-// }
